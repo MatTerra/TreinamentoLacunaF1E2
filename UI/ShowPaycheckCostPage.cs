@@ -11,7 +11,7 @@ namespace UI
         {
             nextPage = MainPage.PageName;
             var totalValue = 0;
-            foreach(var employee in data.EmployeeRepository.GetAll())
+            foreach (var employee in data.EmployeeRepository.GetAll())
             {
                 totalValue += employee.CalculateSalary();
             }

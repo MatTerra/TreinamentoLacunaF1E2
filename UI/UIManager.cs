@@ -10,7 +10,7 @@ namespace UI
         {
             pages.Add(MainPage.PageName, new MainPage());
             pages.Add(CreateEmployeePage.PageName, new CreateEmployeePage());
-            pages.Add(ShowPaycheckCostPage.PageName, new ShowPaycheckCostPage());
+            pages.Add(ShowEmployeeCostPage.PageName, new ShowEmployeeCostPage());
         }
 
         public void Run(GlobalData globalData)

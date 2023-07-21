@@ -18,7 +18,7 @@ namespace Repositorios
 
         public Employee Get(string name)
         {
-            return employees.Find(e => e.Name == name);
+            return employees.Find(e => String.Equals(e.Name, name, StringComparison.CurrentCultureIgnoreCase));
         }
     }
 }
