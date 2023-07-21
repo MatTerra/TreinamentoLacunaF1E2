@@ -20,13 +20,13 @@ namespace Employees
                 _hoursWorked = value; 
             }
         }
-		public HourlyRateEmployee(string Name, EmployeeStatus Status, int HourlyRate) : base(Name, Status)
+		public HourlyRateEmployee(string name, EmployeeStatus status, int hourlyRate) : base(name, status)
         {
-            this.HourlyRate = HourlyRate;
+            this.HourlyRate = hourlyRate;
 		}
-        public HourlyRateEmployee(string Name, int HourlyRate) : base(Name)
+        public HourlyRateEmployee(string name, int hourlyRate) : base(name)
         {
-            this.HourlyRate = HourlyRate;
+            this.HourlyRate = hourlyRate;
         }
 
         public override int CalculateSalary()

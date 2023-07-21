@@ -6,10 +6,10 @@ namespace Employees
 	{
         public EmployeeStatus Status;
         public string Name { get; }
-		public Employee(string Name, EmployeeStatus Status=EmployeeStatus.Active)
+		public Employee(string name, EmployeeStatus status=EmployeeStatus.Active)
 		{
-			this.Status = Status;
-			this.Name = Name;
+			this.Status = status;
+			this.Name = name;
 		}
 
         public abstract int CalculateSalary();

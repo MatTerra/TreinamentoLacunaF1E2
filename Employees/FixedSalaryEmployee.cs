@@ -7,14 +7,14 @@ namespace Employees
         private const float VacationAdditional = 1.3F;
         private const float SuspensionReduction = 0.9F;
         private int Salary;
-		public FixedSalaryEmployee(string Name, EmployeeStatus Status, int Salary): base(Name, Status)
+		public FixedSalaryEmployee(string name, EmployeeStatus status, int salary): base(name, status)
         {
-            this.Salary = Salary;
+            this.Salary = salary;
 		}
 
-        public FixedSalaryEmployee(string Name, int Salary): base(Name)
+        public FixedSalaryEmployee(string name, int salary): base(name)
         {
-            this.Salary = Salary;
+            this.Salary = salary;
         }
 
         public override int CalculateSalary()

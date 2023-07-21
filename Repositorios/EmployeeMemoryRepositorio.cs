@@ -15,5 +15,10 @@ namespace Repositorios
         {
             return employees;
         }
+
+        public Employee Get(string name)
+        {
+            return employees.Find(e => e.Name == name);
+        }
     }
 }

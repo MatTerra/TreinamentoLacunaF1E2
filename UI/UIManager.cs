@@ -15,11 +15,10 @@ namespace UI
 
         public void Run(GlobalData globalData)
         {
-            string nextPageName = "main";
-            Page? nextPage;
+            var nextPageName = "main";
             do
             {
-                if (pages.TryGetValue(nextPageName, value: out nextPage))
+                if (pages.TryGetValue(nextPageName, out var nextPage))
                 {
                     var pageDone = false;
                     while (!pageDone)
